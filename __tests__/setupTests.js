@@ -22,3 +22,7 @@ const getSelection = () => ({
 
 window.getSelection = getSelection;
 document.getSelection = getSelection;
+
+process.on('unhandledRejection', (error, promise) => {
+  console.log('Unhandled Rejection at: Promise', promise, 'Reason:', error.stack);
+});
