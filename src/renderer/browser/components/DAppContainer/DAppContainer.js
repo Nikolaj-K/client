@@ -40,6 +40,11 @@ export default class DAppContainer extends React.PureComponent {
   async componentDidMount() {
     window.addEventListener('focus', this.handleWindowFocus);
 
+    // TODO: We can't keep this here long term, but it fixes the tests...
+    if (!this.webview) {
+      return;
+    }
+
     this.webview.addEventListener('dom-ready', this.handleDomReady);
     this.webview.addEventListener('ipc-message', this.handleIPCMessage);
     this.webview.addEventListener('new-window', this.handleNewWindow);
@@ -227,6 +232,11 @@ export default class DAppContainer extends React.PureComponent {
 
   focusAndNotify = () => {
     this.webview.focus();
-    this.props.onFocus(this.webview.getWebContents().getId());
+
+    const webContents = this.webview.getWebContents && this.webview.getWebContents();
+
+    if (webContents) {
+      this.props.onFocus(webContents.getId());
+    }
   }
 }
