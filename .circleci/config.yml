@@ -95,7 +95,7 @@ jobs:
       - run: yarn install
       # don't support ledger in win32 builds since we're having trouble getting the build working
       - run: yarn remove @ledgerhq/hw-transport-node-hid
-      - run: yarn dist --ia32
+      - run: yarn dist -w --ia32
       - store_artifacts:
           path: dist
           destination: build
