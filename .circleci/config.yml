@@ -99,7 +99,7 @@ jobs:
       - run: apt-get -y install libx11-dev:i386 libudev-dev libudev-dev:i386 libusb-1.0-0-dev:i386 libusb-0.1-4:i386 gcc
       # libusb-0.1-4:i386
       - run: yarn install
-      - run: yarn dist --ia32
+      - run: yarn dist -w --ia32
       - store_artifacts:
           path: dist
           destination: build
