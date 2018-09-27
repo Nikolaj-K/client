@@ -88,10 +88,10 @@ jobs:
     <<: *win32_config
     steps:
       - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
+      # - restore_cache:
+      #     keys:
+      #     - v1-dependencies-{{ checksum "package.json" }}
+      #     - v1-dependencies-
       - run: apt-get -y update
       - run: apt-get -y --no-install-recommends install gcc-multilib g++-multilib
       - run: apt-get -y install libudev-dev libusb-1.0-0-dev
