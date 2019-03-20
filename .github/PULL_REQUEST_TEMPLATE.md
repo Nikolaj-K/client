@@ -3,48 +3,33 @@
 <!-- For more information, see the `CONTRIBUTING` guide. -->
 
 <!--- Describe your changes in detail -->
-## Description
-
-
+### Description
 
 <!--- Why is this change required? What problem does it solve? -->
 <!--- Describe the current and new situation/behavior --->
-## Motivation and Context
-
-
+### Motivation and Context
 
 <!--- Please describe in detail how you tested your changes. -->
 <!--- Include details of your testing environment -->
-## How Has This Been Tested?
+### How Has This Been Tested?
 
-
-
-## Screenshots (if appropriate)
-
-
+### Screenshots (if appropriate)
 
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply. -->
-## Types of changes
+### Types of changes
 - [ ] Chore (tests, refactors, and fixes)
 - [ ] New feature (adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-
-
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-## Checklist
-- [ ] I have read the **[CONTRIBUTING](./CONTRIBUTING.md)** guidelines and confirm that my code follows the code style of this project.
+### Checklist
 - [ ] Tests for the changes have been added (for bug fixes/features)
-
-
 
 <!-- Mark this to let us know if the docs require adjustments for this PR. -->
 <!-- We have our documentation in a seperate repo, feel free to update the docs accordingly. :) -->
 #### Documentation
 - [ ] Docs need to be added/updated (for bug fixes/features)
 
-
-
 <!-- Put `closes #XXXX` or `fixes #XXXX` in your comment to auto-close the issue that your PR fixes (if such). -->
-## Closing issues
+### Closing issues
 Fixes #
